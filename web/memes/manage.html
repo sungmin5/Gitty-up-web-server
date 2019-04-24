@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Meme Manager</title>
+    <link rel='shortcut icon' href='/web/memes/favicon.ico'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='/web/memes/manage.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js'></script>
+    <script src='/web/memes/manage.js'></script>
+</head>
+<body>
+    <div class='header'>
+        <h1 class='pageTitle txt'>Manage Your Memes</h1>
+    </div>
+    <div class='pageBody'>
+        <div class='loader'>
+            <img src='/web/memes/loading.gif' class='img' id='loadImage' />
+        </div>
+        <div class='editor' class='hide'>
+            <form action="/">
+                <div class='image'>
+                    <h2 class='sectionHead txt'>Meme Image Selection</h2>
+                    <div class='sectionBody'>
+                        <span class='imageDesc txt'>Please select an image to use:</span>
+                        <select name='memeSelect' class='imageSelect form-control' required>
+                            <option value=''></option>
+                            <option value='simply.jpg'>One Does Not Simply...</option>
+                            <option value='grumpy.jpg'>Grumpy Cat</option>
+                            <option value='ermahgerd.jpg'>ERMAHGERD!!!</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='caption'>
+                    <h2 class='sectionHead txt'>Meme Caption Selection</h2>
+                    <div class='sectionBody'>
+                        <span class='captionDesc txt'>Please enter a top caption:</span>
+                        <input type='text' name='topCaption' class='captionInput topC form-control' required />
+                        <span class='captionDesc txt'>Please enter a bottom caption:</span>
+                        <input type='text' name='bottomCaption' class='captionInput bottomC form-control' required />
+                    </div>
+                </div>
+                <div class='del'>
+                    <input type="checkbox" class='memeDelete' value="delete"><span class='delDesc txt'>    Delete this meme</span>
+                </div>
+            </form>
+            <div class='submit'>
+                <button class='sub btn btn-primary'>Submit</button>
+            </div>
+        </div>
+        <div class='error hide'>
+            <span class='errorMsg'>Sorry, we couldn't find that meme!</span>
+        </div>
+        <div class='success hide'>
+            <span class='successMsg'>Woohoo! Your request was successful!</span>
+        </div>
+    </div>
+</body>
+</html>

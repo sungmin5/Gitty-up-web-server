@@ -1,0 +1,125 @@
+body {
+    background-color: khaki;
+}
+
+/*general styling*/
+.hide {
+    display: none !important;
+}
+
+.txt {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/*styling for loader*/
+.loader {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+}
+
+/*styling for header of page*/
+.header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: #2c5e91 !important;
+    color: white;
+    top: 0%;
+    left: 0%;
+}
+
+.pageBody {
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    left: 0%;
+}
+
+/*styling for form*/
+form {
+    width: 100%;
+}
+
+/*styling for image selection section*/
+.image {
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+}
+
+/*styling for caption selection section*/
+.caption {
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+}
+
+/*styling for meme delete checkbox*/
+.del {
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+/*styling for submit section*/
+.submit {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+}
+
+/*styling for submit section*/
+.sectionHead {
+    margin-left: 5%;
+    width: 100%;
+}
+
+/*styling for submit section*/
+.sectionBody {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.form-control {
+    width: 25%;
+}
+
+.btn {
+    margin-left: 45%;
+    width: 10%;
+}
+
+/*styling for error display*/
+.error {
+    position: fixed;
+    top: 30%;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+/*styling for success display*/
+.success {
+    position: fixed;
+    top: 30%;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+.successMsg {
+    color: green;
+    font-size: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+}

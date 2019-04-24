@@ -1,0 +1,40 @@
+port 80;
+root .;
+threadCount 50;
+router {
+    handler echo {
+        location /echo;
+    }
+    handler status {
+        location /status;
+    }
+    handler health {
+        location /health;
+    }
+    handler static1 {
+        location /static1;
+        root resources/static1;
+    }
+    handler static2 {
+        location /static2;
+        root resources/static2;
+    }
+    handler webMeme {
+        location /web/memes;
+        root web/memes;
+    }
+    handler imageMeme {
+        location /image/memes;
+        root resources/memes/templates;
+    }
+    handler proxy {
+        port 80;
+        location /ucla;
+        root www.ucla.edu;
+    }
+    handler meme {
+        location /memes;
+        memeTemplatePath resources/memes/templates/;
+        memePath resources/memes/data/;
+    }
+}
